@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Crimson Pro', serif;
+}
+
+h1 {
+    background: darkslategray;
+    padding: 30px 0;
+    margin-top: 0;
+}

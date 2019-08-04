@@ -1,10 +1,103 @@
+/* Basic layout styles */
+
 * {
     box-sizing: border-box;
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
     background: darkslategray;
     padding: 30px 0;
     margin-top: 0;
+    text-align: center;
 }
+
+.main-div {
+    border-bottom: 5px solid rgb(34, 34, 34);
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2,
+legend {
+    color: darkslategray;
+}
+
+form {
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+p {
+    color: slategray;
+    padding-bottom: 20px;
+}
+
+span {
+    color: slategray;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+    background: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.primary,
+.secondary {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    padding: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+}
+
+select[id$="state"],
+textarea[id$="comment"] {
+    width: 100%;
+}
+
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding: 0 10px;
+}
+
+button {
+    background: darkslategray;
+    border-radius: 5px;
+    padding: 30px 80px;
+    width: 100%;
+    font-size: 1.5em;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+

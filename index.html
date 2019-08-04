@@ -6,71 +6,103 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Techdegree Project 3</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    
     <header>
         <h1>THE CODE REVIEW</h1>
-        <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
     </header>
-    
+
     <main>
+
+        <div class="main-div">
+            <h2 class="title">Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+
         <form action="index.html" method="post">
-            
-
-            <fieldset>
-                <legend>Contact Information</legend>
-            
-                <label for="name">Full Name</label><br>
-                <input type="text" id="name" name="user_name"><br>
-
-                <label for="email">Email Address</label><br>
-                <input type="email" id="email" name="user-email"><br>
-
-                <label for="phone">Phone Number</label><br>
-                <input type="tel"  id="phone" name="user-phone"><br>
-
-                <label for="address">Street Address</label><br>
-                <input type="text" id="address" name="user-address"><br>
-
-                <label for="city">City</label><br>
-                <input type="text" id="city" name="user_city"><br>
-
-                <label for="state">State</label><br>
-                <select id="state" name="user_state">
-                    <option value="maharashtra">Maharashtra</option>
-                    <option value="rajasthan">Rajasthan</option>
-                    <option value="gujrat">Gujrat</option>
-                    <option value="tamil_nadu">Tamil Nadu</option>
-                    <option value="assam">Assam</option>
-                    <option value="delhi">Delhi</option>
-                </select><br>
                 
-                <label for="zipcode">Zipcode</label><br>
-                <textarea id="zipcode" name="user-zipcode"></textarea>
+            <fieldset class="primary">
+                <legend class="content-heading">Contact Information</legend>
+                    
+                <div class="full-name">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="user_name" placeholder="Required">
+                </div>
 
+                <div class="mail">
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="user-email" placeholder="Required">
+                </div>
+
+                <div class="phone-number">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel"  id="phone" name="user-phone">
+                </div>
+
+                <div class="street-name">
+                    <label for="address">Street Address</label><br>
+                    <input type="text" id="address" name="user-address">
+                </div>
+
+                <div class="city-name">
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="user_city">
+                </div>
+
+                <div class="state-menu">
+                    <label for="state">State</label><br>
+                    <select id="state" name="user_state">
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="gujrat">Gujrat</option>
+                        <option value="tamil_nadu">Tamil Nadu</option>
+                        <option value="assam">Assam</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                        <option value="goa">Goa</option>
+                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                        <option value="kerela">Kerela</option>
+                    </select>
+                </div>
+                
+                <div class="zip">
+                    <label for="zipcode">Zipcode</label><br>
+                    <textarea id="zipcode" name="user-zipcode"></textarea>
+                </div>
             </fieldset>
 
-            <fieldset>
-                <legend>Newsletter</legend>
+            <hr>
 
-                <label>Select the newsletters you would like to recieve</label><br><br>
+            <fieldset class="secondary">
 
-                <input type="checkbox" id="html_news" value="html_news" name="user_interests"><label for="html_news">HTML News</label><br><br>
-                <input type="checkbox" id="css_news" value="css_news" name="user_interests"><label for="css_news">CSS News</label><br><br>
-                <input type="checkbox" id="javascript_news" value="javascript_news" name="user_interests"><label for="javascript_news">Javascript News</label><br><br>
-
-                <label>Newsletter Format</label><br><br>
-
-                <input type="radio" id="html" value="html" name="user_format"><label for="html">HTML</label><br><br>
-                <input type="radio" id="plain_text" value="plain_text" name="user_format"><label for="plain_text">Plain Text</label><br><br>
+                <legend class="content-heading">Newsletter</legend>
                 
-                <label for="comment">Other topics you'd like to hear about</label><br><br>
-                <textarea id="comment" name="user_comment"></textarea><br><br>
+                <div class="checkbox">
+                    <label>Select the newsletters you would like to recieve</label><br><br>
 
-                <button type="submit">Sign Up</button><br><br>
+                    <input type="checkbox" id="html_news" value="html_news" name="user_interests">  <label for="html_news">HTML News</label><br><br>
+                    <input type="checkbox" id="css_news" value="css_news" name="user_interests">  <label for="css_news">CSS News</label><br><br>
+                    <input type="checkbox" id="javascript_news" value="javascript_news" name="user_interests">  <label for="javascript_news">Javascript News</label>
+                </div>
+
+                <div class="radio"> 
+                    <label>Newsletter Format</label><br><br>
+
+                    <input type="radio" id="html" value="html" name="user_format">  <label for="html">HTML</label><br><br>
+                    <input type="radio" id="plain_text" value="plain_text" name="user_format">  <label for="plain_text">Plain Text</label><br><br>
+                </div>   
+                
+                <div class="comment-section">
+                    <label for="comment">Other topics you'd like to hear about</label><br><br>
+                    <textarea id="comment" name="user_comment"></textarea><br><br>
+                </div>
+                
+                <button type="submit">Sign Up</button>
 
             </fieldset>
 
@@ -78,7 +110,7 @@
     </main>
 
     <footer>
-        <span>&copy; The Code Review</span>
+        <span>Copyright The Code Review</span>
     </footer>
 </body>
 </html>

@@ -54,6 +54,14 @@ select {
     margin: 10px 0;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: darkslategray;
+    transition: width 2s linear 1s;
+}
+
 legend {
     font-size: 20px;
     font-weight: bold;
@@ -80,8 +88,8 @@ textarea[id$="comment"] {
     width: 100%;
 }
 
-input:focus {
-    border-color: darkslategray;
+textarea {
+    padding: 5px 0;
 }
 
 ::placeholder {
@@ -146,7 +154,7 @@ footer {
     }
 
     textarea[id$="comment"] {
-        padding: 20px 0;
+        line-height: 2.8;
     }
 
 }

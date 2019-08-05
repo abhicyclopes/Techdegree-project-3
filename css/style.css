@@ -48,10 +48,11 @@ span {
 input,
 textarea,
 select {
-    background: lightgray;
+    background-color: lightgray;
     padding: 10px;
     border-radius: 5px;
     margin: 10px 0;
+    transition: background-color 2s ease-out;
 }
 
 input:focus,
@@ -60,6 +61,7 @@ select:focus {
     outline: none;
     border-color: darkslategray;
     transition: width 2s linear 1s;
+    background-color: lightcoral;
 }
 
 legend {
